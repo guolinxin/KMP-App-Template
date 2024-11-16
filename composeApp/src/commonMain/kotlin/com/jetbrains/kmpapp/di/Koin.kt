@@ -1,10 +1,10 @@
 package com.jetbrains.kmpapp.di
 
-import com.jetbrains.kmpapp.data.InMemoryMuseumStorage
-import com.jetbrains.kmpapp.data.KtorMuseumApi
-import com.jetbrains.kmpapp.data.MuseumApi
-import com.jetbrains.kmpapp.data.MuseumRepository
-import com.jetbrains.kmpapp.data.MuseumStorage
+import com.jetbrains.kmpapp.data.museum.InMemoryMuseumStorage
+import com.jetbrains.kmpapp.data.museum.KtorMuseumApi
+import com.jetbrains.kmpapp.data.museum.MuseumApi
+import com.jetbrains.kmpapp.data.museum.MuseumRepository
+import com.jetbrains.kmpapp.data.museum.MuseumStorage
 import com.jetbrains.kmpapp.screens.detail.DetailViewModel
 import com.jetbrains.kmpapp.screens.list.ListViewModel
 import io.ktor.client.HttpClient

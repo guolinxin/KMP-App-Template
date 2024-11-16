@@ -11,6 +11,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.toRoute
+import app.newtrend.trade.ui.theme.darkScheme
+import app.newtrend.trade.ui.theme.lightScheme
 import com.jetbrains.kmpapp.screens.detail.DetailScreen
 import com.jetbrains.kmpapp.screens.list.ListScreen
 import kotlinx.serialization.Serializable
@@ -23,8 +25,11 @@ data class DetailDestination(val objectId: Int)
 
 @Composable
 fun App() {
+    val colors = if (!isSystemInDarkTheme()) lightScheme else darkScheme
+
+
     MaterialTheme(
-        colorScheme = if (isSystemInDarkTheme()) darkColorScheme() else lightColorScheme()
+        colorScheme = if (isSystemInDarkTheme()) darkScheme else lightScheme
     ) {
         Surface {
             val navController: NavHostController = rememberNavController()

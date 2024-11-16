@@ -1,4 +1,4 @@
-package com.jetbrains.kmpapp.data
+package com.jetbrains.kmpapp.data.museum
 
 import kotlinx.serialization.Serializable
 
